@@ -13,8 +13,8 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 public class TestBase {
 
     String remoteBrowser = System.getProperty("remoteBrowser", "selenoid.autotests.cloud/wd/hub");
-    String remoteBrowserUser = System.getProperty("remoteBrowserUser", "user1");
-    String remoteBrowserPassword = System.getProperty("remoteBrowserPassword", "1234");
+    String remoteBrowserUser = System.getProperty("remoteBrowserUser");
+    String remoteBrowserPassword = System.getProperty("remoteBrowserPassword");
 
     @BeforeEach
     void setUp() {
